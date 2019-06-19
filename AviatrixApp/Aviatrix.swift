@@ -9,9 +9,15 @@
 import Foundation
 
 class Aviatrix {
+    var author = ""
+    var running = false
     
+    init(newAuthor : String) {
+        author = newAuthor
+    }
     func start() -> Bool {
-        return true
+        running = true
+        return running
     }
     
     func refuel() {
@@ -29,4 +35,5 @@ class Aviatrix {
     func knownDestinations() -> [String] {
        return ["St. Louis"]
     }
+
 }
